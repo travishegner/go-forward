@@ -1,0 +1,8 @@
+[Unit]
+Description=Simple Daemon to maintain the state of /proc/sys/net/ipv4/ip_forward
+
+[Service]
+ExecStart=/usr/local/bin/go-forward
+
+[Install]
+WantedBy=multi-user.target
